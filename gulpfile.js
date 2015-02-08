@@ -48,8 +48,9 @@ gulp.task('templates', function() {
   }
 
   var config = YAML.load('config.yaml');
-  gulp.src('./source/index.html')
+  gulp.src('./source/index.hbs')
     .pipe(handlebars(config, options))
+    .pipe(rename("index.hbs"))
     .pipe(gulp.dest('./dist'))
     .pipe(connect.reload());
 });
