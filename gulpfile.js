@@ -39,7 +39,7 @@ gulp.task('templates', function() {
   var options = {
     ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false
     partials : {},
-    batch : ['./source'],
+    batch : ['./source/partials'],
     helpers : {
       stringify_json: function(obj) {
         return JSON.stringify(obj);
@@ -48,9 +48,8 @@ gulp.task('templates', function() {
   }
 
   var config = YAML.load('config.yaml');
-  gulp.src('./source/index.hbs')
+  gulp.src('./source/index.html')
     .pipe(handlebars(config, options))
-    .pipe(rename('index.html'))
     .pipe(gulp.dest('./dist'))
     .pipe(connect.reload());
 });
@@ -107,6 +106,7 @@ gulp.task('images', function() {
 
 gulp.task('watch', function() {
   gulp.watch('source/**/*.hbs', ['templates']);
+  gulp.watch('source/**/*.html', ['templates']);
   gulp.watch('source/css/**/*', ['styles']);
   gulp.watch('source/js/*.js', ['scripts']);
   gulp.watch('source/js/vendor/**/*.js', ['vendor-scripts']);
