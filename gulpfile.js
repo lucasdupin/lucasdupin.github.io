@@ -48,9 +48,9 @@ gulp.task('templates', function() {
   }
 
   var config = YAML.load('config.yaml');
-  gulp.src('./source/index.hbs')
+  gulp.src('./source/*.hbs')
     .pipe(handlebars(config, options))
-    .pipe(rename("index.hbs"))
+    .pipe(rename({extname: ".html"}))
     .pipe(gulp.dest('./dist'))
     .pipe(connect.reload());
 });
@@ -77,7 +77,11 @@ gulp.task('styles', function() {
       use: autoprefixer({browsers: ['ie 10', 'last 2 versions']})
     }))
     .pipe(gulp.dest('./dist/css'))
-    .pipe(connect.reload());
+    .pipe(connect.reload())
+    .on("error", function(e){
+      console.log(e.toString());
+      this.emit("end");
+    });
 
 });
 

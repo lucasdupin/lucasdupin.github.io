@@ -1,5 +1,5 @@
 @import "normalize"
-@import url(http://fonts.googleapis.com/css?family=Dosis);
+@import "about"
 
 *
   box-sizing border-box
@@ -15,14 +15,48 @@ nav
   right 0
   top 0
   padding 30px
+  z-index 5
   a
     text-decoration none
     text-transform uppercase
-    font-weight lighter
+    font-size 14pt
     transition opacity 0.2s ease-out
     display inline-block
+    color white
     margin 0 20px
     &:hover
       opacity 0.7
     &:last-child
       margin-right 0
+    &.selected
+      border-bottom solid 1px white
+header
+  height 500px
+  background black center center no-repeat
+  background-size cover
+  background-position 0 0
+  position relative
+  box-shadow inset 0 0 0 1000px rgba(0,0,0,.2)
+
+  h1
+    font-family 'Dosis', sans-serif
+    color white
+    text-align center
+    text-transform uppercase
+    font-family 'Dosis', sans-serif
+    line-height 1em
+    font-weight 200
+    font-size 70px
+    display block
+    position absolute
+    width 100%
+    top 50%
+    margin 0
+    transform translate(0%, -50%)
+
+h1 
+  font-family 'Montserrat', sans-serif
+  margin-top 40px
+
+footer
+  margin-top 50px
