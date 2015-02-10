@@ -1,5 +1,7 @@
 {{> header index=true }}
-<section>
-  
+{{#each featured}}
+<section class="featured-work {{keyword}}" style="background-image: url('img/featured/{{~keyword}}.jpg')">
+  <h1><a href="{{keyword}}.html">{{name}}</a></h1>
 </section>
+{{/each}}
 {{> footer}}

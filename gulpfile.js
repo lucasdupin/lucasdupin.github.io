@@ -19,6 +19,14 @@ var YAML = require('yamljs'),
 
 var production = util.env.production;
 
+function swallowError (error) {
+
+    //If you want details of the error in the console
+    console.log(error.toString());
+
+    this.emit('end');
+}
+
 // -------------------------------------
 //   Tasks
 // -------------------------------------
@@ -50,6 +58,7 @@ gulp.task('templates', function() {
   var config = YAML.load('config.yaml');
   gulp.src('./source/*.hbs')
     .pipe(handlebars(config, options))
+    .on("error", swallowError)
     .pipe(rename({extname: ".html"}))
     .pipe(gulp.dest('./dist'))
     .pipe(connect.reload());
@@ -69,7 +78,7 @@ gulp.task('vendor-scripts', function(){
 
 gulp.task('styles', function() {
   return gulp.src('./source/css/main.styl')
-    .on('error', function (err) { console.log(err.message); })
+    .on('error', swallowError)
     .pipe(stylus({
       errors: true,
       compress: false,
@@ -77,11 +86,7 @@ gulp.task('styles', function() {
       use: autoprefixer({browsers: ['ie 10', 'last 2 versions']})
     }))
     .pipe(gulp.dest('./dist/css'))
-    .pipe(connect.reload())
-    .on("error", function(e){
-      console.log(e.toString());
-      this.emit("end");
-    });
+    .pipe(connect.reload());
 
 });
 
