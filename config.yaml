@@ -1,6 +1,31 @@
 featured:
   - name: TED Global
     keyword: ted
+    content:
+      - type: video
+        value: "main video"
+      - type: text
+        value: |
+          "The idea was to combine technology and art to generate an unique expression of South American culture."
+          "We used three sources:"
+          "Google Earth’s terrain data from South America"
+          "South American designs and illustrations"
+          "A proprietary WebGL mapping technology"
+          "We took readily available terrain data from several places in South America, such as: Los Andes (Chile), Patagonia (Argentina), Amazonia (Brazil) etc… and used it as a canvas. "
+          "Combining illustrations from several different artists from South America, we created a fly through continent like it’s never been seen before. Finally we end on a gorgeous representation of the South, as seen from the distance."
+      - type: video
+        value: "south making of"
+      - type: text
+        value: "Mighty Spaces"
+      - type: video
+        value: "kite"
+      - type: text
+        value: |
+          Mighty Spaces
+          "We attached our own tracking devices to a customized kite. Then we asked a kid to fly the kite, which is one of the most popular activities for kids to do in South America. As he flew it, we were able to plot the kite's movement into a 3D graphic, creating a stunning visual representation of the flight. Overall this was an incredibly fun experience to have a local kid from Sao Paolo take part in!"
+      - type: video
+        value: "makgin-of"
+
   - name: Youtube Playlist Store
     keyword: playlist-store
   - name: Nike Running
