@@ -5,3 +5,47 @@ header.timeline
 section#timeline
   width $content-width
   margin 50px auto
+
+  .intro
+    padding 0 10px
+
+  ul
+    margin 0
+    padding 0
+  li
+    $width = 240px
+    display inline-block
+    margin 10px
+    background #555 center center
+    width $width
+    height ($width/16*9)
+    background-size cover
+    position relative
+    overflow hidden
+    transition filter 0.3s ease-out
+    &.disabled:hover
+      filter saturate(0)
+    &:hover
+      .name
+        top 0
+      .brand
+        bottom 0
+  a
+    text-decoration none
+    display block
+    width 100%
+    height 100%
+
+  .name, .brand
+    display block
+    color white
+    background rgba(0, 0, 0, 0.7)
+    padding 4px
+    position absolute
+    left 0
+    width 100%
+    transition top 0.3s ease-out, bottom 0.3s ease-out
+  .name
+    top -30px
+  .brand
+    bottom -30px

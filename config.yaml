@@ -96,4 +96,77 @@ featured:
      This is a Black & White video due to agency visual language but I promise you, the site was quite green and red =]
      <iframe src="https://www.youtube.com/embed/bcxEY6u36-c" frameborder="0" allowfullscreen></iframe>
 
-
+jobs:
+  - name: Itaú Criança V2
+    brand: Itaú
+    picture: itau_crianca_2013.jpg
+  - name: Jackpot
+    brand: Absolut
+    link: http://youtu.be/tj8qSxxIMNk
+    picture: jackpot.jpg
+  - name: Greyhound
+    brand: Absolut
+    link: "http://youtu.be/y4RP1Gf8l2k"
+    picture: greyhound.jpg
+  - name: Loggi iOS App
+    brand: Loggi
+    link: "https://itunes.apple.com/br/app/loggi-entrega-em-1-toque/id879157764?mt=8"
+  - name: Imaginaria
+    brand: Livraria da Vila
+    picture: imaginaria.jpg
+    link: "http://www.thefwa.com/mobile/imaginaria-check-in-at-imaginary-place?p=b-reel%C2%A0%E2%80%A6"
+  - name: ACUVUE PisqueGol
+    brand: Johnson & Johnson
+    picture: pisquegol.jpg
+  - name: Extrado da Vida
+    brand: HSBC
+    picture: hsbc_extrato.jpg
+  - name: Itaú Criança V1
+    brand: Itaú
+    picture: itau_crianca_2012.jpg
+  - name: Absolut Drinks
+    brand: Absolut
+    picture: absolut_drinks.jpg
+    link: "http://www.thefwa.com/mobile/absout-drinks-brazil?p=possible-worldwide"
+  - name: More that you can imagine
+    brand: Coke Light
+    picture: coke_light.jpg
+  - name: Round Summer Guide
+    brand: Skol
+    picture: summer_guide.jpg
+    link: http://youtu.be/MH2xiNiD2Kw
+  - name: Ball Pool
+    brand: Bossa Nova Films
+    picture: ball_pool.jpg
+    link: https://vimeo.com/25289282
+  - name: Polo I-Motion
+    brand: Volks Wagen
+    picture: polo.jpg
+    link: https://vimeo.com/22484427
+  - name: Come Back Ferrorama
+    brand: Estrela
+    picture: ferrorama.jpg
+    link: http://br.adforum.com/award/showcase/6650183/2011/ad/34466398
+  - name: What's your real age?
+    brand: Unimed
+    picture: real_age.jpg
+    link: http://www.thefwa.com/site/what-s-your-real-age-?p=possible-worldwide
+  - name: Pharmaton Club
+    brand: Pharmaton
+    picture: pharmaton.jpg
+    link: "http://www.thefwa.com/site/clube-pharmaton?p=possible-worldwide"
+  - name: Berri Açaí
+    brand: Absolut
+    picture: berri_acai.jpg
+  - name: Enjoy the ride
+    brand: Rider
+    picture: rider.jpg
+    link: "http://www.thefwa.com/site/rider?p=possible-worldwide"
+  - name: Instant Campaign
+    brand: Grïngo.nu
+    link: http://www.thefwa.com/site/instant-campaign?p=possible-worldwide
+    picture: instant_campaign.jpg
+  - name: Prove The Impossible
+    brand: Coke Zero
+    picture: coke_zero.jpg
+    link: "http://www.thefwa.com/site/coke-zero-prove"

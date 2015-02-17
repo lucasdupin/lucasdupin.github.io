@@ -3,45 +3,17 @@
   <h1>Getting nostalgic</h1>
 </header>
 <section id="timeline">
-  <p>I've been working with advertisement for the last 7 years, but I'm a programmer for more then 10.<br>
+  <p class="intro">I've been working with advertisement for the last 7 years, but I'm a programmer for more then 10.<br>
   These are some works I'm proud to take part in.</p>
-  2014
   <ul>
-    <li>Itau Criança 2014</li>
-    <li>Absolut Greyhound</li>
-    <li>Loggi</li>
-    <li><a href="https://www.youtube.com/watch?v=ZJGTuZl05v0" target="_blank">Google Playlist Store - http://www.rga.com/awards/</a> - clio - silver</li>
-  </ul>
-  2013
-  <ul>
-    <li><a href="http://www.thefwa.com/mobile/imaginaria-check-in-at-imaginary-place?p=b-reel%C2%A0%E2%80%A6" target="_blank">Imaginaria</a></li>
-    <li>ACUVUE Pisque Gol</li>
-  </ul>
-  2012
-  <ul>
-  <li><a href="http://itbabies.net/2012/12/18/dica-de-aplicativo-itau-crianca-iphone-ipod-e-ipad/" target="_blank">Itaú Criança</a></li>
-  </ul>
-  2011
-  <ul>
-    <li><a href="http://www.thefwa.com/mobile/absout-drinks-brazil?p=possible-worldwide" target="_blank">Absolut Drinks Brazil</a></li>
-    <li>http://cargocollective.com/bporrio/E-Mais-Do-Que-Voce-Imagina</li>
-    <li>Skol Summer</li>
-    <li>Ball pool</li>
-    <li><a href="https://vimeo.com/22484427" target="_blank">Polo I-Motion</a></li>
-  </ul>
-  2010
-  <ul>
-    <li><a href="http://www.brainstorm9.com.br/24063/advertising/cannes-lions-2011-o-video-case-de-volta-ferrorama-ouro-em-direct/" target="_blank">Come Back Ferrorama</a></li>
-    <li><a href="http://www.thefwa.com/site/what-s-your-real-age-?p=possible-worldwide" target="_blank">What's your real age?</a></li>
-    <li><a href="http://www.thefwa.com/site/clube-pharmaton?p=possible-worldwide" target="_blank">Clube Pharmaton</a></li>
-    <li>Absolut Berri Açaí - http://cargocollective.com/andremancini/Absolut-Berri-Acai</li>
-    <li><a href="https://vimeo.com/22484823" target="_blank">Futeboom</a></li>
-  </ul>
-  2009
-  <ul>
-    <li><a href="http://www.thefwa.com/site/rider?p=possible-worldwide" target="_blank">Rider- https://vimeo.com/8096822</a></li>
-    <li><a href="http://www.thefwa.com/site/instant-campaign?p=possible-worldwide" target="_blank">Instant Campaign</a></li>
-    <li><a href="http://www.thefwa.com/site/coke-zero-prove" target="_blank">Coca-Cola Prove</a></li>
+  {{#each jobs}}
+  <li style="background-image: url('img/timeline/{{picture}}')" {{#unless link}}class="disabled"{{/unless}}>
+    {{#if link}}<a href="{{link}}" target="_blank">{{/if}}
+    <span class="name">{{name}}</span>
+    <span class="brand">{{brand}}</span>
+    {{#if link}}</a>{{/if}}
+  </li>
+  {{/each}}
   </ul>
 </section>
 {{> footer}}
