@@ -97,9 +97,6 @@ featured:
      <iframe src="https://www.youtube.com/embed/bcxEY6u36-c" frameborder="0" allowfullscreen></iframe>
 
 jobs:
-  - name: Itaú Criança V2
-    brand: Itaú
-    picture: itau_crianca_2013.jpg
   - name: Jackpot
     brand: Absolut
     link: http://youtu.be/tj8qSxxIMNk
@@ -111,13 +108,18 @@ jobs:
   - name: Loggi iOS App
     brand: Loggi
     link: "https://itunes.apple.com/br/app/loggi-entrega-em-1-toque/id879157764?mt=8"
+    picture: loggi.jpg
   - name: Imaginaria
     brand: Livraria da Vila
     picture: imaginaria.jpg
     link: "http://www.thefwa.com/mobile/imaginaria-check-in-at-imaginary-place?p=b-reel%C2%A0%E2%80%A6"
   - name: ACUVUE PisqueGol
     brand: Johnson & Johnson
-    picture: pisquegol.jpg
+    picture: pisque_gol.jpg
+  - name: Football Religion
+    brand: Foca
+    picture: football_religion.jpg
+    link: "http://br.adforum.com/award/showcase/6650183/2014/ad/34497926"
   - name: Extrado da Vida
     brand: HSBC
     picture: hsbc_extrato.jpg
@@ -147,21 +149,14 @@ jobs:
     brand: Estrela
     picture: ferrorama.jpg
     link: http://br.adforum.com/award/showcase/6650183/2011/ad/34466398
-  - name: What's your real age?
-    brand: Unimed
-    picture: real_age.jpg
-    link: http://www.thefwa.com/site/what-s-your-real-age-?p=possible-worldwide
-  - name: Pharmaton Club
-    brand: Pharmaton
-    picture: pharmaton.jpg
-    link: "http://www.thefwa.com/site/clube-pharmaton?p=possible-worldwide"
-  - name: Berri Açaí
-    brand: Absolut
-    picture: berri_acai.jpg
   - name: Enjoy the ride
     brand: Rider
     picture: rider.jpg
     link: "http://www.thefwa.com/site/rider?p=possible-worldwide"
+  - name: What's your real age?
+    brand: Unimed
+    picture: real_age.jpg
+    link: http://www.thefwa.com/site/what-s-your-real-age-?p=possible-worldwide
   - name: Instant Campaign
     brand: Grïngo.nu
     link: http://www.thefwa.com/site/instant-campaign?p=possible-worldwide
@@ -170,3 +165,10 @@ jobs:
     brand: Coke Zero
     picture: coke_zero.jpg
     link: "http://www.thefwa.com/site/coke-zero-prove"
+  - name: Pharmaton Club
+    brand: Pharmaton
+    picture: pharmaton.jpg
+    link: "http://www.thefwa.com/site/clube-pharmaton?p=possible-worldwide"
+  - name: Berri Açaí
+    brand: Absolut
+    picture: berri_acai.jpg
