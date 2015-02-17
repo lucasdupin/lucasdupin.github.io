@@ -1,10 +1,10 @@
 $(function(){
 
   // Header / section animation
-  $("section.featured-work, header").each(function(idx, item){
+  $("section.featured-work, header.animate").each(function(idx, item){
     applyParallax(item, true);
   })
-  $("section.featured-work, header").each(function(idx, item){
+  $("section.featured-work, header.animate").each(function(idx, item){
     applyParallax(item, false);
   })
 

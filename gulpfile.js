@@ -62,6 +62,16 @@ gulp.task('templates', function() {
     .pipe(rename({extname: ".html"}))
     .pipe(gulp.dest('./dist'))
     .pipe(connect.reload());
+
+  for(var i=0; i < config.featured.length; i++) {
+    var job = config.featured[i];
+    gulp.src("./source/featured-job.hbs")
+    .pipe(handlebars(job, options))
+    .on("error", swallowError)
+    .pipe(rename({extname: ".html", basename: job.keyword}))
+    .pipe(gulp.dest('./dist'))
+    .pipe(connect.reload());
+  }
 });
 
 // ----- copy scripts ----- //
