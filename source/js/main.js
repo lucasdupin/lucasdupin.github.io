@@ -2,9 +2,6 @@ $(function(){
 
   // Header / section animation
   $("section.featured-work, header.animate").each(function(idx, item){
-    applyParallax(item, true);
-  })
-  $("section.featured-work, header.animate").each(function(idx, item){
     applyParallax(item, false);
   })
 
@@ -25,7 +22,7 @@ function applyParallax(element, lockTop) {
     var top = w.scrollTop();
     var scrollVal = top - elTop;
     if (lockTop) {
-      scrollVal = Math.min(elH, Math.max(scrollVal, 0));
+      scrollVal = parseInt(Math.min(elH, Math.max(scrollVal, 0)));
     }
     el.css("background-position", "0 " + scrollVal/3 + "px");
   })

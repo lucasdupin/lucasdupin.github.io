@@ -77,3 +77,23 @@ featured:
 
   - name: Grow With Us
     keyword: gwu
+    content: |
+     This job might seem simple at first but it's anything but that.  
+     We've build an interactive streamming for showing people how tomatoes are cultivated in Unilever's farm in Chile.
+
+     Our structure included:
+     * 2 farmers with cameras on top of their hats
+     * One camera tracking the sun's position and taking snapshots for a timelapse
+     * Spotify integration that lets you choose the currently playing music in the farm.
+
+     And that's just the tip of the iceberg, to make this happen we needed to:
+     * Write *ruby* scripts to monitor and take snapshots of the cameras
+     * Trigger *After Effects* rendering through *command line*
+     * Convert videos to web formats using *ffmpeg* on demand
+     * Schedule *cron* tasks
+     * Remotely access and monitor the operation
+
+     This is a Black & White video due to agency visual language but I promise you, the site was quite green and red =]
+     <iframe src="https://www.youtube.com/embed/bcxEY6u36-c" frameborder="0" allowfullscreen></iframe>
+
+
