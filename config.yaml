@@ -1,5 +1,5 @@
 featured:
-  - name: TED Global
+  - name: TED South Experiment
     keyword: ted
     content: |
       South Experiment is a project created with the purpose of generating all the videos for 2014's TED Global conference.  
@@ -35,7 +35,7 @@ featured:
       Overall this was an incredibly fun experience to have a local kid from Sao Paolo take part in!  
       </div>
       <iframe class="small-video" src="https://www.youtube.com/embed/82ntI0fs8ug" frameborder="0" allowfullscreen></iframe>
-  - name: Youtube Playlist Store
+  - name: Youtube's Playlist Store
     keyword: playlist-store
     content: |
       In this job I joined R/GA to build an WebGL interface for Google.  
