@@ -8,6 +8,9 @@ $(function(){
     applyParallax(item, false);
   })
 
+  // External links for mardown content
+  $("article a").attr("target", "_blank");
+
 
 });
 

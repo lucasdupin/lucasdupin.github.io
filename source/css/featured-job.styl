@@ -2,13 +2,30 @@
   width 100%
   min-height 100%
 
+  h2
+    font-family 'Dosis', sans-serif
+    font-size 2em
+    font-weight normal
+
   header
     height 88px !important
     background-position 0 20%
 
   iframe
-    width 100%
-    height 100%
-    min-height 100%
+    width $content-width
+    height ($content-width * 9px / 16px)
     border none
     display block
+    margin-top 30px
+
+    &.small-video
+      width ($content-width/2)
+      height ($content-width/2 * 9px / 16px)
+
+  article
+    width $content-width
+    margin auto
+
+  .columns
+    column-count 2
+    margin 30px 0

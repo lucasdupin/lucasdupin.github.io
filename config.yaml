@@ -2,25 +2,78 @@ featured:
   - name: TED Global
     keyword: ted
     content: |
-      <h2>South!</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/0qqI4JoK_io" frameborder="0" allowfullscreen></iframe>
-      "The idea was to combine technology and art to generate an unique expression of South American culture."
-      "We used three sources:"
-      "Google Earth’s terrain data from South America"
-      "South American designs and illustrations"
-      "A proprietary WebGL mapping technology"
-      "We took readily available terrain data from several places in South America, such as: Los Andes (Chile), Patagonia (Argentina), Amazonia (Brazil) etc… and used it as a canvas. "
-      "Combining illustrations from several different artists from South America, we created a fly through continent like it’s never been seen before. Finally we end on a gorgeous representation of the South, as seen from the distance."
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/8gH0N0EoAIc" frameborder="0" allowfullscreen></iframe>
-      <h2>Mighty Spaces</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/83XLUl1S1HY" frameborder="0" allowfullscreen></iframe>
-      We attached our own tracking devices to a customized kite. Then we asked a kid to fly the kite, which is one of the most popular activities for kids to do in South America. As he flew it, we were able to plot the kite's movement into a 3D graphic, creating a stunning visual representation of the flight. Overall this was an incredibly fun experience to have a local kid from Sao Paolo take part in!
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/82ntI0fs8ug" frameborder="0" allowfullscreen></iframe>
+      South Experiment is a project created with the purpose of generating all the videos for 2014's TED Global conference.  
+      I am proud of participating on two of them: *Main Video (South!)* and *Mighty Spaces*.  
+      Thanks to *[Black Magic](http://www.itsblackmagic.com)* to make it possible.
+
+      ##South!
+      <iframe src="https://www.youtube.com/embed/0qqI4JoK_io" frameborder="0" allowfullscreen></iframe>
+      <div class="columns">
+      The idea was to combine technology and art to generate an unique expression of South American culture.  
+
+      The project is a combination of three components:
+
+      <ul>
+      <li>GeoTIFF terrain data from South America</li>
+      <li>South American designs and illustrations</li>
+      <li>A proprietary WebGL mapping technology</li>
+      </ul>
+
+      We took readily available terrain data from several places in South America, such as: Los Andes (Chile), Patagonia (Argentina), Amazonia (Brazil) etc… and used it as a canvas.  
+
+      Combining illustrations from several different artists from South America, we created a fly through continent like it’s never been seen before. Finally we end on a gorgeous representation of the South, as seen from the distance.
+      </div>
+      <iframe class="small-video" src="https://www.youtube.com/embed/8gH0N0EoAIc" frameborder="0" allowfullscreen></iframe>
+      
+      ## Mighty Spaces
+
+      <iframe class="full-video" src="https://www.youtube.com/embed/83XLUl1S1HY" frameborder="0" allowfullscreen></iframe>
+      <div class="columns">
+      We attached our own tracking devices to a customized kite. Then we asked a kid to fly the kite, which is one of the most popular activities for kids to do in South America.  
+
+      As he flew it, we were able to plot the kite's movement into a 3D graphic, creating a stunning visual representation of the flight.  
+      Overall this was an incredibly fun experience to have a local kid from Sao Paolo take part in!  
+      </div>
+      <iframe class="small-video" src="https://www.youtube.com/embed/82ntI0fs8ug" frameborder="0" allowfullscreen></iframe>
   - name: Youtube Playlist Store
     keyword: playlist-store
+    content: |
+      In this job I joined R/GA to build an WebGL interface for Google.  
+      We chose WebGL since we were targeting web techonologies, it makes sense for a Google project, right?  
+      The deadline was insane, we had to finish it in 1 week. Fortunately it went really well.
+      ### Awards
+      Clio Awards 2014 - Events/Engagement - Silver  
+      One Show 2014 - Interactive - Merit  
+      Adweek Project Isaac 2014 - Digital - Silver  
+      CCSP 2014 - Inovação - Silver  
+      CCSP 2014 - Mídia Exterior - Anuário  
+      Wave Festival 2014 - Cyber - Gold  
+      Wave Festival 2014 - Design - Bronze  
+      ## Case
+      <iframe src="https://www.youtube.com/embed/vJTxGfXvMis" frameborder="0" allowfullscreen></iframe>
+
+      ## Interface Demo
+      <iframe src="https://www.youtube.com/embed/AGzHz4U0SP8" frameborder="0" allowfullscreen></iframe>
   - name: Nike Running
     keyword: nike
+    content: |
+      I feel really proud when projects go beyond advertisement.  
+      This time we took part in a Nike event to help people experience their product's new features and to exercise!  
+
+      We used some depth cameras and processed their image using algorithms built into OpenCV to create a game where you would pretend you're running or jumping.
+      <iframe src="https://www.youtube.com/embed/xqMhZxMA9_8" frameborder="0" allowfullscreen></iframe>
   - name: Read for a Child
     keyword: itau-crianca
+    content: |
+      Teaching how to read is something magical. 
+      Teaching how to read in a third world country makes you feel a better person.  
+      This was the challenge, teching in a large scale, so, we developed a book companion app to make storytelling more pleasant for kids.
+
+      For this project we chose Corona/Lua as our programming environment to have a flexible UI framework (as if in a game) and tweaked it untill we got the best user experience.  
+      Corona also let us develop crossplatform with ease, still enabling us to build native plugins.
+      ## Interface demo
+      <iframe src="https://www.youtube.com/embed/cfOoDSkofo4" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/SC9LVFxn2Hg" frameborder="0" allowfullscreen></iframe>
+
   - name: Grow With Us
     keyword: gwu

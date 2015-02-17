@@ -14,6 +14,7 @@ var YAML = require('yamljs'),
     util = require('gulp-util'),
     uglify = require('gulp-uglify'),
     handlebars = require('gulp-compile-handlebars'),
+    marked = require('marked'),
     rename = require('gulp-rename')
   ;
 
@@ -23,7 +24,6 @@ function swallowError (error) {
 
     //If you want details of the error in the console
     console.log(error.toString());
-
     this.emit('end');
 }
 
@@ -65,6 +65,8 @@ gulp.task('templates', function() {
 
   for(var i=0; i < config.featured.length; i++) {
     var job = config.featured[i];
+    if (job.content) 
+      job.content = marked(job.content);
     gulp.src("./source/featured-job.hbs")
     .pipe(handlebars(job, options))
     .on("error", swallowError)
@@ -87,7 +89,7 @@ gulp.task('vendor-scripts', function(){
 // ----- Stylus/CSS ----- //
 
 gulp.task('styles', function() {
-  return gulp.src('./source/css/main.styl')
+  gulp.src('./source/css/main.styl')
     .on('error', swallowError)
     .pipe(stylus({
       errors: true,
@@ -125,8 +127,7 @@ gulp.task('images', function() {
 // -------------------------------------
 
 gulp.task('watch', function() {
-  gulp.watch('source/**/*.hbs', ['templates']);
-  gulp.watch('source/**/*.html', ['templates']);
+  gulp.watch(['source/**/*.hbs','source/**/.html','config.yaml'], ['templates']);
   gulp.watch('source/css/**/*', ['styles']);
   gulp.watch('source/js/*.js', ['scripts']);
   gulp.watch('source/js/vendor/**/*.js', ['vendor-scripts']);
