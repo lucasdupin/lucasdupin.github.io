@@ -5,25 +5,25 @@
 <section id="timeline">
 
   <h1>Some awards</h1>
-  <p class="intro">These are works I'm proud of taking part in.</p>
-  <ul>
+  <p>These are works I'm proud of taking part in.</p>
+  <ul class="awarded">
   {{#each awarded}}
-  <li style="background-image: url('img/timeline/{{picture}}')" {{#unless link}}class="disabled"{{/unless}}>
-    <a href="{{link}}" target="_blank">
+  <li>
+    <a href="{{link}}" style="background-image: url('img/timeline/{{picture}}')" target="_blank">
       <span class="name">{{name}} - {{brand}}</span>
     </a>
-    <span class="bottom">
+    <ul>
       {{#each awards}}
-      {{this}}{{#unless @last}},{{/unless}}
+      <li>{{this}}</li>
       {{/each}}
-    </span>
+    </ul>
   </li>
   {{/each}}
   </ul>
   
   <h1>Noteworthy</h1>
   <p class="intro">Other works that played an important role in my professional life.</p>
-  <ul>
+  <ul class="noteworthy">
   {{#each noteworthy}}
   <li style="background-image: url('img/timeline/{{picture}}')" {{#unless link}}class="disabled"{{/unless}}>
     {{#if link}}<a href="{{link}}" target="_blank">{{/if}}

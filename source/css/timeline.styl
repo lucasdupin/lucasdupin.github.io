@@ -6,26 +6,56 @@ section#timeline
   width $content-width
   margin 50px auto
 
-  .intro
-    padding 0 10px
+  $width = 251px
+
+  ul.awarded
+    list-style none
+    > li
+      display inline-block
+      vertical-align top
+      width $width
+    a
+      background #555 center center
+      width $width
+      height ($width/16*9)
+      background-size cover
+      position relative
+      display inline-block
+      overflow hidden
+    ul
+      vertical-align top
+      margin-bottom 10px
+      li
+        display inline-block
+        margin 4px 2px 0 0
+        padding 3px 6px
+        background #eaeaea
+
+  ul.noteworthy
+    list-style none
+    li
+      overflow hidden
+      display inline-block
+      margin 10px 0 0 10px
+      background #555 center center
+      width $width
+      height ($width/16*9)
+      background-size cover
+      position relative
+      transition filter 0.3s ease-out
+      &.disabled:hover
+        filter saturate(0)
+
+    a
+      text-decoration none
+      display block
+      width 100%
+      height 100%
 
   ul
     margin 0
     padding 0
-  li
-    $width = 251px
-    display inline-block
-    margin 10px 0 0 10px
-    background #555 center center
-    width $width
-    height ($width/16*9)
-    background-size cover
-    position relative
-    overflow hidden
-    transition filter 0.3s ease-out
-    &.disabled:hover
-      filter saturate(0)
-    &:hover
+    li:hover
       .name
         top 0
       .bottom
@@ -39,12 +69,6 @@ section#timeline
       font-size 0.9em
       line-height 1.5em
       background linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.2))
-  a
-    text-decoration none
-    display block
-    width 100%
-    height 100%
-
   .name, .bottom
     display block
     color white
