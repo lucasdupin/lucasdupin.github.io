@@ -96,7 +96,84 @@ featured:
      This is a Black & White video due to agency visual language but I promise you, the site was quite green and red =]
      <iframe src="https://www.youtube.com/embed/bcxEY6u36-c" frameborder="0" allowfullscreen></iframe>
 
-jobs:
+awarded:
+  - name: Playlist Store
+    brand: Youtube
+    link: "playlist-store.html"
+    picture: playlist-store.jpg
+    awards:
+      - Clio
+      - One Show
+      - Adweek Project Isaac
+      - CCSP
+      - Wave Festival
+  - name: Loggi iOS App
+    brand: Loggi
+    link: "https://itunes.apple.com/br/app/loggi-entrega-em-1-toque/id879157764?mt=8"
+    picture: loggi.jpg
+    awards:
+      - App Store Trending App
+  - name: Imaginaria
+    brand: Livraria da Vila
+    picture: imaginaria.jpg
+    link: "http://www.thefwa.com/mobile/imaginaria-check-in-at-imaginary-place?p=b-reel%C2%A0%E2%80%A6"
+    awards:
+      - FWA MOTD
+  - name: Football Religion
+    brand: Foca
+    picture: football_religion.jpg
+    link: "http://br.adforum.com/award/showcase/6650183/2014/ad/34497926"
+    awards:
+      - Cannes Lions
+  - name: Absolut Drinks
+    brand: Absolut
+    picture: absolut_drinks.jpg
+    link: "http://www.thefwa.com/mobile/absout-drinks-brazil?p=possible-worldwide"
+    awards:
+      - FWA MOTD
+  - name: Come Back Ferrorama
+    brand: Estrela
+    picture: ferrorama.jpg
+    link: http://br.adforum.com/award/showcase/6650183/2011/ad/34466398
+    awards:
+      - 2x Cannes Lions
+      - El Ojo
+      - FIAP
+      - Wave Festival
+      - Webby
+  - name: Enjoy the ride
+    brand: Rider
+    picture: rider.jpg
+    link: "http://www.thefwa.com/site/rider?p=possible-worldwide"
+    awards:
+      - FWA SOTD
+  - name: What's your real age?
+    brand: Unimed
+    picture: real_age.jpg
+    link: http://www.thefwa.com/site/what-s-your-real-age-?p=possible-worldwide
+    awards:
+      - FWA SOTD
+      - Wave Festival
+  - name: Instant Campaign
+    brand: Grïngo.nu
+    link: http://www.thefwa.com/site/instant-campaign?p=possible-worldwide
+    picture: instant_campaign.jpg
+    awards:
+      - FWA SOTD
+  - name: Prove The Impossible
+    brand: Coke Zero
+    picture: coke_zero.jpg
+    link: "http://www.thefwa.com/site/coke-zero-prove"
+    awards:
+      - FWA SOTD
+  - name: Pharmaton Club
+    brand: Pharmaton
+    picture: pharmaton.jpg
+    link: "http://www.thefwa.com/site/clube-pharmaton?p=possible-worldwide"
+    awards:
+      - FWA SOTD
+
+noteworthy:
   - name: Jackpot
     brand: Absolut
     link: http://youtu.be/tj8qSxxIMNk
@@ -105,37 +182,22 @@ jobs:
     brand: Absolut
     link: "http://youtu.be/y4RP1Gf8l2k"
     picture: greyhound.jpg
-  - name: Loggi iOS App
-    brand: Loggi
-    link: "https://itunes.apple.com/br/app/loggi-entrega-em-1-toque/id879157764?mt=8"
-    picture: loggi.jpg
-  - name: Imaginaria
-    brand: Livraria da Vila
-    picture: imaginaria.jpg
-    link: "http://www.thefwa.com/mobile/imaginaria-check-in-at-imaginary-place?p=b-reel%C2%A0%E2%80%A6"
-  - name: ACUVUE PisqueGol
+  - name: PisqueGol
     brand: Johnson & Johnson
     picture: pisque_gol.jpg
-  - name: Football Religion
-    brand: Foca
-    picture: football_religion.jpg
-    link: "http://br.adforum.com/award/showcase/6650183/2014/ad/34497926"
+    link: http://youtu.be/bRfbvhp_zj8
   - name: Extrado da Vida
     brand: HSBC
     picture: hsbc_extrato.jpg
   - name: Itaú Criança V1
     brand: Itaú
     picture: itau_crianca_2012.jpg
-  - name: Absolut Drinks
-    brand: Absolut
-    picture: absolut_drinks.jpg
-    link: "http://www.thefwa.com/mobile/absout-drinks-brazil?p=possible-worldwide"
   - name: More that you can imagine
     brand: Coke Light
     picture: coke_light.jpg
   - name: Round Summer Guide
     brand: Skol
-    picture: summer_guide.jpg
+    picture: skol.jpg
     link: http://youtu.be/MH2xiNiD2Kw
   - name: Ball Pool
     brand: Bossa Nova Films
@@ -145,30 +207,6 @@ jobs:
     brand: Volks Wagen
     picture: polo.jpg
     link: https://vimeo.com/22484427
-  - name: Come Back Ferrorama
-    brand: Estrela
-    picture: ferrorama.jpg
-    link: http://br.adforum.com/award/showcase/6650183/2011/ad/34466398
-  - name: Enjoy the ride
-    brand: Rider
-    picture: rider.jpg
-    link: "http://www.thefwa.com/site/rider?p=possible-worldwide"
-  - name: What's your real age?
-    brand: Unimed
-    picture: real_age.jpg
-    link: http://www.thefwa.com/site/what-s-your-real-age-?p=possible-worldwide
-  - name: Instant Campaign
-    brand: Grïngo.nu
-    link: http://www.thefwa.com/site/instant-campaign?p=possible-worldwide
-    picture: instant_campaign.jpg
-  - name: Prove The Impossible
-    brand: Coke Zero
-    picture: coke_zero.jpg
-    link: "http://www.thefwa.com/site/coke-zero-prove"
-  - name: Pharmaton Club
-    brand: Pharmaton
-    picture: pharmaton.jpg
-    link: "http://www.thefwa.com/site/clube-pharmaton?p=possible-worldwide"
   - name: Berri Açaí
     brand: Absolut
     picture: berri_acai.jpg

@@ -3,14 +3,31 @@
   <h1>Getting nostalgic</h1>
 </header>
 <section id="timeline">
-  <p class="intro">I've been working with advertisement for the last 7 years, but I'm a programmer for more then 10.<br>
-  The works below are eitheir awarded or played an important role in my professional life.</p>
+
+  <h1>Some awards</h1>
+  <p class="intro">These are works I'm proud of taking part in.</p>
   <ul>
-  {{#each jobs}}
+  {{#each awarded}}
+  <li style="background-image: url('img/timeline/{{picture}}')" {{#unless link}}class="disabled"{{/unless}}>
+    <a href="{{link}}" target="_blank">
+      <span class="name">{{name}} - {{brand}}</span>
+    </a>
+    <span class="bottom">
+      {{#each awards}}
+      {{this}}{{#unless @last}},{{/unless}}
+      {{/each}}
+    </span>
+  </li>
+  {{/each}}
+  </ul>
+  
+  <h1>Noteworthy</h1>
+  <p class="intro">Other works that played an important role in my professional life.</p>
+  <ul>
+  {{#each noteworthy}}
   <li style="background-image: url('img/timeline/{{picture}}')" {{#unless link}}class="disabled"{{/unless}}>
     {{#if link}}<a href="{{link}}" target="_blank">{{/if}}
-    <span class="name">{{name}}</span>
-    <span class="brand">{{brand}}</span>
+    <span class="name">{{name}} - {{brand}}</span>
     {{#if link}}</a>{{/if}}
   </li>
   {{/each}}
