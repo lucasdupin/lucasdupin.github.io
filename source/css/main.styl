@@ -8,6 +8,12 @@ html, body
   height 100%
 
 //////////////// PRELOADER /////////////////
+section, nav, header
+  visibility hidden
+.pace-done
+  section, nav, header
+    visibility visible
+
 .pace
   -webkit-pointer-events none
   pointer-events none
@@ -26,6 +32,7 @@ html, body
 
 .pace-inactive
   animation hideLoading 1s ease-out forwards
+
 
 .pace .pace-progress
   background #fff
