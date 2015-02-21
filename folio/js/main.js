@@ -43,7 +43,7 @@ function applyParallax(element, lockTop) {
     if (lockTop) {
       scrollVal = parseInt(Math.min(elH, Math.max(scrollVal, 0)));
     }
-    el.backgroundPosition = "0 " + Math.floor(scrollVal/3) + "px";
+    el.backgroundPosition = "center " + Math.floor(scrollVal/3) + "px";
   };
   w.scroll(updatePositions);
 
