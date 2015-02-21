@@ -27,18 +27,25 @@ function applyParallax(element, lockTop) {
 
   var w = $(window);
   var el = $(element);
-  var elTop = el.offset().top;
+  var elTop = el.position().top;
   var elH = el.height();
+  w.resize(function(e){
+    elTop = el.position().top;
+    elH = el.height();
+    updatePositions();
+  })
   
-  w.scroll(function(e){
+  
+  function updatePositions(e){
     shouldApplyParallax = true;
     var top = w.scrollTop();
     var scrollVal = top - elTop;
     if (lockTop) {
       scrollVal = parseInt(Math.min(elH, Math.max(scrollVal, 0)));
     }
-    el.backgroundPosition = "0 " + scrollVal/3 + "px";
-  });
+    el.backgroundPosition = "0 " + Math.floor(scrollVal/3) + "px";
+  };
+  w.scroll(updatePositions);
 
   return el;
 }
