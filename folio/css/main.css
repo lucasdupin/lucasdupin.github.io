@@ -305,15 +305,28 @@ nav a {
   display: inline-block;
   color: #fff;
   margin: 0 20px;
-}
-nav a:hover {
-  opacity: 0.7;
+  position: relative;
 }
 nav a:last-child {
   margin-right: 0;
 }
-nav a.selected {
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
   border-bottom: solid 1px #fff;
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
+}
+nav a:hover:not(.selected) {
+  opacity: 0.7;
+}
+nav a:hover::after,
+nav a.selected::after {
+  opacity: 1;
 }
 header {
   height: 500px;
