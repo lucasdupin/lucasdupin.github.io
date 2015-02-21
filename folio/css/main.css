@@ -256,9 +256,17 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
       user-select: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 99;
 }
 .pace-inactive {
-  display: none;
+  -webkit-animation: hideLoading 1s ease-out forwards;
+          animation: hideLoading 1s ease-out forwards;
 }
 .pace .pace-progress {
   background: #fff;
@@ -505,4 +513,30 @@ section#about {
   display: block;
   width: 800px;
   margin: auto;
+}
+@-webkit-keyframes hideLoading {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes hideLoading {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
