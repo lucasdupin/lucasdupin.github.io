@@ -2,13 +2,17 @@ $(function(){
 
   // Header / section animation
   var parallaxItems = $("section.featured-work, header.animate").map(function(idx, item){
-    return applyParallax(item, false);
-  })
+    return applyParallax(item);
+  });
   function applyTranslations(){
     if (shouldApplyParallax){
       for(var i=0; i< parallaxItems.length; i++) {
         var item = parallaxItems[i];
-        item.css("background-position", item.backgroundPosition);
+        var bg = item.find(".bg");
+        if (bg.length > 0)
+          bg.css("transform", "translate3d(0, " + item.backgroundPosition + "px, 0)");
+        else
+          item.css("background-position", "center " + item.backgroundPosition + "px");
       }
       shouldApplyParallax = false;
     }
@@ -23,7 +27,7 @@ $(function(){
 });
 
 var shouldApplyParallax;
-function applyParallax(element, lockTop) {
+function applyParallax(element) {
 
   var w = $(window);
   var el = $(element);
@@ -40,10 +44,7 @@ function applyParallax(element, lockTop) {
     shouldApplyParallax = true;
     var top = w.scrollTop();
     var scrollVal = top - elTop;
-    if (lockTop) {
-      scrollVal = parseInt(Math.min(elH, Math.max(scrollVal, 0)));
-    }
-    el.backgroundPosition = "center " + Math.floor(scrollVal/3) + "px";
+    el.backgroundPosition = Math.floor(scrollVal/3);
   };
   w.scroll(updatePositions);
 
