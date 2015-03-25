@@ -40,6 +40,6 @@ h1 {
 }
 
 a{
-  text-decoration: none;
-	color:#65BED8;
+  text-decoration: underline;
+	color:#000;
 }
