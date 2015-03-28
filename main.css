@@ -7,34 +7,33 @@ body{
 }
 
 #logo{
-	width: 364px;
-	height: 290px;
-	left: 50%;
-	top: 50%;
+	left: 0;
+	top: 0;
+  right: 0;
+  bottom: 0;
+  width: 275px;
+  height:390px;
 	position: absolute;
-	margin-left:-182px;  
-	margin-top:-210px; 
+  margin: auto;
   overflow: hidden;
 }
 
 h1 {
 	text-align: center;
-	font-family: "Lato", helvetica, arial,sans-serif;
+	font-family: "Dosis", helvetica, arial,sans-serif;
   font-weight: 100;
   font-size: 40px;
-  top: 50%;
   width: 100%;
-  position: absolute;
-  margin-top: 96px;
+  margin-top: 16px;
 }
 
-#address{
+article{
 	position: absolute;
 	bottom: 5px;
-	font-size: 10px;
-  font-weight: 300;
+	font-size: 12px;
+  font-weight: normal;
 	text-align: center;
-	font-family: "Lato", helvetica, arial,sans-serif;
+	font-family: "Dosis", helvetica, arial,sans-serif;
 	letter-spacing: 0.12em;
 	width: 100%;
 }
