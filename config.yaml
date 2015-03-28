@@ -210,7 +210,7 @@ noteworthy:
   - name: Berri Açaí
     brand: Absolut
     picture: berri_acai.jpg
-clients:
+client_list:
   - name: Absolut
     src: absolut.png
   - name: Coca Cola
