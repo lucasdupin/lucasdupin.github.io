@@ -1,0 +1,17 @@
+{{> header clients=true}}
+<header class="clients animate">
+  <h1>Being proud</h1>
+</header>
+<section id="clients">
+
+  <h1>Clients</h1>
+  <ul>
+  {{#each clients}}
+  <li>
+    <img src="img/clients/{{src}}" alt="{{name}}">
+  </li>
+  {{/each}}
+  </ul>
+
+</section>
+{{> footer}}

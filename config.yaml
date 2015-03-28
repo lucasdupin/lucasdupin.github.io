@@ -210,3 +210,34 @@ noteworthy:
   - name: Berri Açaí
     brand: Absolut
     picture: berri_acai.jpg
+clients:
+  - name: Absolut
+    src: absolut.png
+  - name: Coca Cola
+    src: coca_cola.png
+  - name: Google
+    src: google.png
+  - name: HSBC
+    src: hsbc.png
+  - name: "J&J"
+    src: jj.png
+  - name: Nike
+    src: nike.png
+  - name: Nissan
+    src: nissan.png
+  - name: Red Bull
+    src: red_bull.png
+  - name: TED
+    src: ted.png
+  - name: Toyota
+    src: toyota.png
+  - name: Univeler
+    src: unilever.png
+  - name: VolksWagen
+    src: vw.png
+  - name: Banco do Brasil
+    src: bb.png
+  - name: Itaú
+    src: itau.png
+  - name: Skol
+    src: skol.png
