@@ -392,6 +392,8 @@ section.featured-work h1 {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  font-size: 3.5em;
+  font-weight: 200;
 }
 section.featured-work h1 a {
   color: #fff;
