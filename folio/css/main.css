@@ -544,6 +544,32 @@ section#timeline .bottom {
   width: 100%;
   transition: top 0.3s ease-out, bottom 0.3s ease-out;
 }
+header.clients {
+  background-image: url("../img/clients-header.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+}
+section#clients {
+  width: 800px;
+  margin: 50px auto;
+}
+section#clients ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+section#clients ul > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 176px;
+  height: 100px;
+  text-align: center;
+  margin: 30px 10px;
+}
+section#clients ul > li img {
+  max-width: 90%;
+  max-height: 100%;
+}
 header.about {
   background-image: url("../img/about-header.jpg");
 }
