@@ -1,7 +1,6 @@
 {{> header index=true }}
 {{#each featured}}
-<section class="featured-work {{keyword}}">
-  <img class="bg" src="img/featured/{{~keyword}}.jpg">
+<section class="featured-work {{keyword}}" data-parallax="img/featured/{{~keyword}}.jpg">
   <h1><a href="{{keyword}}.html">{{name}}</a></h1>
 </section>
 {{/each}}

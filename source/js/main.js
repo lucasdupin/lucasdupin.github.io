@@ -1,51 +1,49 @@
 $(function(){
 
   // Header / section animation
-  var parallaxItems = $("section.featured-work, header.animate").map(function(idx, item){
+  var parallaxItems = $("[data-parallax]").map(function(idx, item){
     return applyParallax(item);
   });
-  function applyTranslations(){
-    if (shouldApplyParallax){
-      for(var i=0; i< parallaxItems.length; i++) {
-        var item = parallaxItems[i];
-        var bg = item.find(".bg");
-        if (bg.length > 0)
-          bg.css("transform", "translate3d(0, " + item.backgroundPosition + "px, 0)");
-        else
-          item.css("background-position", "center " + item.backgroundPosition + "px");
-      }
-      shouldApplyParallax = false;
-    }
-    window.requestAnimationFrame(applyTranslations);
-  }
-  applyTranslations();
 
   // External links for mardown content
   $("article a").attr("target", "_blank");
 
-
 });
 
-var shouldApplyParallax;
 function applyParallax(element) {
 
   var w = $(window);
   var el = $(element);
   var elTop = el.position().top;
   var elH = el.height();
+  var elW = el.width();
+  var imageURL = el.data("parallax");
+  console.log("background image:", imageURL)
   w.resize(function(e){
     elTop = el.position().top;
-    elH = el.height();
+    backgroundEl.css("height", el.height());
+    backgroundEl.css("width", el.width());
     updatePositions();
   })
-  
+
+  var backgroundEl = $("<div class='parallax-element'><img src='"+imageURL+"'></div>")
+  var parallaxContainer = $("#parallax-container");
+  parallaxContainer.append(backgroundEl)
+  var backgroundImage = $("img", backgroundEl);
+  //
+  backgroundEl.css("height", el.height());
+  backgroundEl.css("width", el.width());
+  el.css("background","transparent")
   
   function updatePositions(e){
-    shouldApplyParallax = true;
     var top = w.scrollTop();
     var scrollVal = top - elTop;
-    el.backgroundPosition = Math.floor(scrollVal/3);
+    var backgroundPosition = Math.floor(scrollVal/3);
+    //
+    backgroundEl.css("transform", "translate3d(0, " + (-scrollVal) + "px, 0)");
+    backgroundImage.css("transform", "translate3d(0, " + (backgroundPosition) + "px, 0)");
   };
+  updatePositions();
   w.scroll(updatePositions);
 
   return el;
