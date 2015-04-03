@@ -227,6 +227,8 @@ client_list:
     src: nissan.png
   - name: Red Bull
     src: red_bull.png
+  - name: Samsung
+    src: samsung.png
   - name: TED
     src: ted.png
   - name: Toyota
