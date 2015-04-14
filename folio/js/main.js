@@ -26,10 +26,10 @@ function applyParallax(element) {
     updatePositions();
   })
 
-  var backgroundEl = $("<div class='parallax-element'><img src='"+imageURL+"'></div>")
+  var backgroundEl = $("<div class='parallax-element'><div class='parallax-image' style='background-image: url("+imageURL+")'></div>")
   var parallaxContainer = $("#parallax-container");
   parallaxContainer.append(backgroundEl)
-  var backgroundImage = $("img", backgroundEl);
+  var backgroundImage = $(".parallax-image", backgroundEl);
   //
   backgroundEl.css("height", el.height());
   backgroundEl.css("width", el.width());

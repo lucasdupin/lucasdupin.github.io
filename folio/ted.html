@@ -15,7 +15,7 @@
     <script data-pace-options='{ "ajax": { "trackWebSockets": false } }' type="text/javascript" href="js/pace.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/main.css" type="text/css">
   </head>
-  <body>
+  <body >
     <div id="parallax-container"></div>
     <nav>
       <a href="index.html" >Latest Work</a>
@@ -30,30 +30,36 @@
   </header>
   <h1>TED South Experiment</h1>
   <article>
-    <p>South Experiment is a project created with the purpose of generating all the videos for 2014&#39;s TED Global conference.<br>I am proud of participating on two of them: <em>Main Video (South!)</em> and <em>Mighty Spaces</em>.<br>Thanks to <em><a href="http://www.itsblackmagic.com">Black Magic</a></em> to make it possible.</p>
+    <p>South Experiment is a project created with the purpose of generating all the videos for 2014&#39;s TED Global conference.<br>I am proud of participating on two of them: <em>Main Video (South!)</em> and <em>Mighty Spaces</em>.<br>My role as a programmer was mainly to create the visuals and animations based on the input data received.<br>You can read more below.</p>
+<p>Thanks to <em><a href="http://www.itsblackmagic.com">Black Magic</a></em> to make it possible.</p>
 <h2 id="south-">South!</h2>
-<iframe src="https://www.youtube.com/embed/0qqI4JoK_io" frameborder="0" allowfullscreen></iframe>
 <div class="columns">
-The idea was to combine technology and art to generate an unique expression of South American culture.<br>
+The idea was to combine technology and art to generate an unique expression of South American culture.<br><br>
 The project is a combination of three components:
-
+<br>
 <ul>
 <li>GeoTIFF terrain data from South America</li>
+<li>Visuals programming using WebGL, Node.js and 2D Canvas</li>
 <li>South American designs and illustrations</li>
-<li>A proprietary WebGL mapping technology</li>
 </ul>
 
-We took readily available terrain data from several places in South America, such as: Los Andes (Chile), Patagonia (Argentina), Amazonia (Brazil) etc… and used it as a canvas.<br>
-Combining illustrations from several different artists from South America, we created a fly through continent like it’s never been seen before. Finally we end on a gorgeous representation of the South, as seen from the distance.
+Using NASA&#39;s terrain data from several places in South America, I reconstructed the terrain geometry using GeoTIFF color depth.<br><br>
+The camera navigation was accomplished using sine and cosine waves, combined with vector math. On top of that some texture scroll helped to make the terrain feel alive.<br><br>
+For the last scene, Vector Buffers made the animation smooth.
+
 </div>
-<iframe class="small-video" src="https://www.youtube.com/embed/8gH0N0EoAIc" frameborder="0" allowfullscreen></iframe>
+
+<iframe class="full-video" src="https://www.youtube.com/embed/0qqI4JoK_io?vq=HD720" frameborder="0" allowfullscreen></iframe>
+<iframe class="full-video" src="https://www.youtube.com/embed/8gH0N0EoAIc" frameborder="0" allowfullscreen></iframe>
 
 <h2 id="mighty-spaces">Mighty Spaces</h2>
+<p><div class="columns">
+It started with a custom kite with tracking devices attached. We asked a kid to fly the kite, which is one of the most popular activities for kids to do in South America.  </p>
+<p>As he flew it, we were able to save the device&#39;s data in a text stream.<br>This stream was the base for plotting the kite&#39;s movement into a 3D scene, built with WebGL.<br><br>
+My part here was to write the socket stream receiver, translate the data into a mesh, animate and render it.
+</div></p>
 <iframe class="full-video" src="https://www.youtube.com/embed/83XLUl1S1HY" frameborder="0" allowfullscreen></iframe>
-<div class="columns">
-We attached our own tracking devices to a customized kite. Then we asked a kid to fly the kite, which is one of the most popular activities for kids to do in South America.<br>
-As he flew it, we were able to plot the kite&#39;s movement into a 3D graphic, creating a stunning visual representation of the flight.<br>Overall this was an incredibly fun experience to have a local kid from Sao Paolo take part in!<br></div>
-<iframe class="small-video" src="https://www.youtube.com/embed/82ntI0fs8ug" frameborder="0" allowfullscreen></iframe>
+<iframe class="full-video" src="https://www.youtube.com/embed/82ntI0fs8ug" frameborder="0" allowfullscreen></iframe>
 
   </article>
 </section>
