@@ -4,49 +4,60 @@ featured:
     content: |
       South Experiment is a project created with the purpose of generating all the videos for 2014's TED Global conference.  
       I am proud of participating on two of them: *Main Video (South!)* and *Mighty Spaces*.  
+      My role as a programmer was mainly to create the visuals and animations based on the input data received.  
+      You can read more below.
+
       Thanks to *[Black Magic](http://www.itsblackmagic.com)* to make it possible.
 
       ##South!
-      <iframe src="https://www.youtube.com/embed/0qqI4JoK_io" frameborder="0" allowfullscreen></iframe>
       <div class="columns">
       The idea was to combine technology and art to generate an unique expression of South American culture.  
-
+      <br>
       The project is a combination of three components:
-
+      <br>
       <ul>
       <li>GeoTIFF terrain data from South America</li>
+      <li>Visuals programming using WebGL, Node.js and 2D Canvas</li>
       <li>South American designs and illustrations</li>
-      <li>A proprietary WebGL mapping technology</li>
       </ul>
 
-      We took readily available terrain data from several places in South America, such as: Los Andes (Chile), Patagonia (Argentina), Amazonia (Brazil) etc… and used it as a canvas.  
+      Using NASA's terrain data from several places in South America, I reconstructed the terrain geometry using GeoTIFF color depth.  
+      <br>
+      The camera navigation was accomplished using sine and cosine waves, combined with vector math. On top of that some texture scroll helped to make the terrain feel alive.  
+      <br>
+      For the last scene, Vector Buffers made the animation smooth.
 
-      Combining illustrations from several different artists from South America, we created a fly through continent like it’s never been seen before. Finally we end on a gorgeous representation of the South, as seen from the distance.
       </div>
-      <iframe class="small-video" src="https://www.youtube.com/embed/8gH0N0EoAIc" frameborder="0" allowfullscreen></iframe>
+
+      <iframe class="full-video" src="https://www.youtube.com/embed/0qqI4JoK_io?vq=HD720" frameborder="0" allowfullscreen></iframe>
+      <iframe class="full-video" src="https://www.youtube.com/embed/8gH0N0EoAIc" frameborder="0" allowfullscreen></iframe>
       
       ## Mighty Spaces
 
-      <iframe class="full-video" src="https://www.youtube.com/embed/83XLUl1S1HY" frameborder="0" allowfullscreen></iframe>
       <div class="columns">
-      We attached our own tracking devices to a customized kite. Then we asked a kid to fly the kite, which is one of the most popular activities for kids to do in South America.  
+      It started with a custom kite with tracking devices attached. We asked a kid to fly the kite, which is one of the most popular activities for kids to do in South America.  
 
-      As he flew it, we were able to plot the kite's movement into a 3D graphic, creating a stunning visual representation of the flight.  
-      Overall this was an incredibly fun experience to have a local kid from Sao Paolo take part in!  
+      As he flew it, we were able to save the device's data in a text stream.  
+      This stream was the base for plotting the kite's movement into a 3D scene, built with WebGL.  
+      <br>
+      My part here was to write the socket stream receiver, translate the data into a mesh, animate and render it.
       </div>
-      <iframe class="small-video" src="https://www.youtube.com/embed/82ntI0fs8ug" frameborder="0" allowfullscreen></iframe>
+      <iframe class="full-video" src="https://www.youtube.com/embed/83XLUl1S1HY" frameborder="0" allowfullscreen></iframe>
+      <iframe class="full-video" src="https://www.youtube.com/embed/82ntI0fs8ug" frameborder="0" allowfullscreen></iframe>
   - name: Youtube's Playlist Store
     keyword: playlist-store
     content: |
-      In this job I joined R/GA to build an WebGL interface for Google.  
-      We chose WebGL since we were targeting web techonologies, it makes sense for a Google project, right?  
-      The deadline was insane, we had to finish it in 1 week. Fortunately it went really well.
+      For this job I joined R/GA to build an WebGL interface for Google.  
+      We chose WebGL since we were targeting web techonologies, and after all... it makes sense for a Google project, right?  
+      The deadline was insane, we had to finish it in whithin 1 week. Fortunately it went really well...
+      <br><br>
+      Three.js helped me a lot here, I could concentrate on the user interface since the boring texture mapping stuff was already done \o/
       ### Awards
       Clio Awards 2014 - Events/Engagement - Silver  
       One Show 2014 - Interactive - Merit  
       Adweek Project Isaac 2014 - Digital - Silver  
-      CCSP 2014 - Inovação - Silver  
-      CCSP 2014 - Mídia Exterior - Anuário  
+      CCSP 2014 - Innovation - Silver  
+      CCSP 2014 - OOH - Yearbook  
       Wave Festival 2014 - Cyber - Gold  
       Wave Festival 2014 - Design - Bronze  
       ## Case
@@ -54,27 +65,37 @@ featured:
 
       ## Interface Demo
       <iframe src="https://www.youtube.com/embed/AGzHz4U0SP8" frameborder="0" allowfullscreen></iframe>
+  - name: Red Bull Digital Academy
+    keyword: red-bull-academy
+    content: |
+      Last year I was invited by Red Bull to join their technology project as a curator.  
+      This project was the Red Bull Digital Academy.
+
+      For me it was a great opportunity to work with other developers, giving them a chance to have their projects sponsored by Red Bull.  
+      We've been through a mentorship schedule, guiding the selected idea to its final conclusion, and of course, having a party in the end!
+
+      The project website is in portuguese: http://www.redbulldigitalacademy.com.br/
+
+      ## Project video
+      <iframe src="https://www.youtube.com/embed/6_Ye0wGs8Vk" frameborder="0" allowfullscreen></iframe>
   - name: Nike Running
     keyword: nike
     content: |
       I feel really proud when projects go beyond advertisement.  
       This time we took part in a Nike event to help people experience their product's new features and to exercise!  
+      <br>
+      To win this game you need to prentend you're running as fast as you can! Each step will give you 1 point and you'll have 30 seconds.  
+      There was a live ranking where you could check your score and compete with other guys who attended to the event.
 
-      We used some depth cameras and processed their image using algorithms built into OpenCV to create a game where you would pretend you're running or jumping.
-      <iframe src="https://www.youtube.com/embed/xqMhZxMA9_8" frameborder="0" allowfullscreen></iframe>
-  - name: Read for a Child
-    keyword: itau-crianca
-    content: |
-      Teaching how to read is something magical. 
-      Teaching how to read in a third world country makes you feel a better person.  
-      This was the challenge, teching in a large scale, so, we developed a book companion app to make storytelling more pleasant for kids.
+      We used:
+        * OpenFrameworks
+        * OpenCV
+        * RFID wristbands for ID
+        * Depth cameras (Kinect)
+        * Big TVs
+        * 9 laptops
 
-      For this project we chose Corona/Lua as our programming environment to have a flexible UI framework (as if in a game) and tweaked it untill we got the best user experience.  
-      Corona also let us develop crossplatform with ease, still enabling us to build native plugins.
-      ## Interface demo
-      <iframe src="https://www.youtube.com/embed/cfOoDSkofo4" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/SC9LVFxn2Hg" frameborder="0" allowfullscreen></iframe>
-
+      <iframe class="full-video" src="https://www.youtube.com/embed/xqMhZxMA9_8" frameborder="0" allowfullscreen></iframe>
   - name: Grow With Us
     keyword: gwu
     content: |
@@ -95,6 +116,19 @@ featured:
 
      This is a Black & White video due to agency visual language but I promise you, the site was quite green and red =]
      <iframe src="https://www.youtube.com/embed/bcxEY6u36-c" frameborder="0" allowfullscreen></iframe>
+  - name: Read for a Child
+    keyword: itau-crianca
+    content: |
+      Teaching how to read is something magical. 
+      Teaching how to read in a third world country makes you feel a better person.  
+      This was the challenge, teching in a large scale, so, we developed a book companion app to make storytelling more pleasant for kids.
+
+      For this project we chose Corona/Lua as our programming environment to have a flexible UI framework (as if in a game) and tweaked it untill we got the best user experience.  
+      Corona also let us develop crossplatform with ease, still enabling us to build native plugins.
+      ## Interface demo
+      <iframe src="https://www.youtube.com/embed/cfOoDSkofo4" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/SC9LVFxn2Hg" frameborder="0" allowfullscreen></iframe>
+
 
 awarded:
   - name: Playlist Store
@@ -113,6 +147,15 @@ awarded:
     picture: loggi.jpg
     awards:
       - App Store Trending App
+  - name: Red Bull Anthem
+    brand: Red Bull
+    picture: redbull.jpg
+    link: "http://www.frenchdesignindex.com/design-index-9482"
+    awards:
+      - French Design Index
+      - CSS Winner
+      - Design Licks
+      - One Page Awards
   - name: Imaginaria
     brand: Livraria da Vila
     picture: imaginaria.jpg
